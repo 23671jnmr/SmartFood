@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+img{
+    width: 100%;
+}
 .hero-image {
     background-image: url(./Images/backgroundimg.png);
     background-size: cover;
@@ -118,14 +121,8 @@
     align-items: center;
     gap: 60px;
 }
-.second-text-box .intro-image {
-    width: 600px;
-    height: auto;
-    border-radius: 16px;
-    margin-left: 40px;
-}
-.second-text-box .text-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.second-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
 }
