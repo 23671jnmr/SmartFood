@@ -44,15 +44,30 @@
             window.location.href = "trends.html";
         }
     </script>
-    <section class="second-section">
-        <div class="image">
-            <img src="./Images/mozzarellasticks.jpg" alt="mozzarella sticks">   
-    </div>
+<section class="second-section">
+    <div class="second-text-box">
+        <div class="food-image-container">
+            <div class="food-title-block">
+                <h2 class="food-title">Trending now</h2>
+                <h3 class="food-title-sub">Don't miss out on trying trending foods</h3>
+            </div>
+            <img src="./Images/mozzarellasticks.jpg" alt="mozzarella sticks">
+        </div>
     <div class="food-info">
-        <h1>Mozzarella Sticks</h1>
-        <p>Deliciously cheesy and crispy, our mozzarella sticks are the perfect appetizer for any occasion.</p>
+        <h1 class="food-subtitle">Mozzarella <br>Sticks</h1>
+        <p class="food-description">An easy and simple <br> recipe which people <br> loves to eat as a <br>snack </p>
+        <div class="food-button-container">
+            <button class="food-button">See more →</button>
+        </div>
+        <script>
+           function goToFood() {
+               window.location.href = "trends.html";
+           }
 
+              document.querySelector('.food-button').addEventListener('click', goToFood);
+        </script>
     </div>
-    </section>
+    </div>
+</section>
 </body>
 </html>
