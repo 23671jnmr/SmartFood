@@ -60,7 +60,7 @@
             <button class="food-button">See more →</button>
         </div>
         <script>
-           function goToFood() {
+           function goToTrends() {
                window.location.href = "trends.html";
            }
 
@@ -69,5 +69,52 @@
     </div>
     </div>
 </section>
+
+<section>
+    <footer class="footer-bar-two"></footer>
+</section>
+<section class="third-section">
+    <div class="third-text-box">
+        <div class="food-image-container">
+            <div class="food-title-block">
+                <h2 class="">Explore More</h2>
+            </div>
+        <div class="image-row">
+            <div class="image-column">
+                    <img src="./Images/carbonarapasta.jpeg" alt="Carbonara Pasta">
+                    <p class="image-description">Creamy Carbonara Pasta</p>
+            </div>
+            <div class="image-column">
+                    <img src="./Images/chocolatempousse.jpg" alt="Chocolate Mousse">
+                    <p class="image-description">Chocolate Mousse</p>
+            </div>
+            <div class="image-column">
+                    <img src="./Images/carrotcakeimg.jpg" alt="Carrot Cake">
+                    <p class="image-description">Carrot Cake</p>
+            </div>
+        </div>
+</section>
+    <section>
+            <div class="search-wrapper">
+        <form action="/action_page.php" class="search-bar" onsubmit="searchGoogle(); return false;">
+            <input type="text" id="foodSearch" placeholder="Search for recipes..." name="Search">
+           <button onclick="searchGoogle(); return false;">
+            <div class="search-button-img">
+            <img src="./Images/searchimage.png" alt="Search"></div>
+           </button>
+        </form>
+    </div>
+    <script>
+        function searchGoogle() {
+            const query = document.querySelector('.search-bar input').value.trim();
+            if (query) {
+                const googleURL = `https://www.google.com/search?q=${encodeURIComponent(query + " recipes")}`;
+                window.open(googleURL, "_blank"); // Opens in a new tab
+            } else {
+                alert("Please enter a food name to search.");
+            }
+        }
+    </script>
+</section>
 </body>
-</html>
+</html>     
